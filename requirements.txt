@@ -21,14 +21,14 @@ zarr>=2.14.0
 # Data access
 intake>=0.7.0
 intake-esm>=2023.1.0
-cdsapi>=0.7.0
+cdsapi==0.7.7
 
 # Visualization
 matplotlib>=3.7.0
-bokeh>=3.1.0
-holoviews>=1.16.0
-hvplot>=0.9.0
-geoviews>=1.11.0
+bokeh==3.3.4
+holoviews==1.18.3
+hvplot==0.9.2
+geoviews==1.11.1
 panel>=1.0.0
 plotly>=5.14.0
 folium>=0.14.0
