@@ -45,6 +45,9 @@ scikit-learn>=1.3.0
 jupyterlab>=4.0.0
 ipywidgets>=8.0.0
 jupyter-bokeh>=4.0.0
+cftime
+jupyter-bokeh
+param
 
 # Modeling utilities
 modsimpy>=1.0.0
