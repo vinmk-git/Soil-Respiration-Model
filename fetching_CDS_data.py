@@ -1,5 +1,7 @@
 # %%
 import cdsapi
+import os
+os.makedirs("CDS_Data", exist_ok=True)
 
 # %%
 # getting SSP1-2.6 soil moisture data from the Copernicus Climate Data Store (CDS) and storing as a zip file
@@ -50,7 +52,7 @@ request = {
 }
 
 client = cdsapi.Client()
-client.retrieve(dataset, request).download("ssp126_data.zip")
+client.retrieve(dataset, request).download("CDS_Data/ssp126_data.zip")
 
 
 # %%
@@ -102,7 +104,7 @@ request = {
 }
 
 client = cdsapi.Client()
-client.retrieve(dataset, request).download("ssp245_data.zip")
+client.retrieve(dataset, request).download("CDS_Data/ssp245_data.zip")
 
 
 # %%
@@ -154,7 +156,7 @@ request = {
 }
 
 client = cdsapi.Client()
-client.retrieve(dataset, request).download("ssp585_data.zip")
+client.retrieve(dataset, request).download("CDS_Data/ssp585_data.zip")
 
 
 # %%
@@ -205,7 +207,7 @@ request = {
 }
 
 client = cdsapi.Client()
-client.retrieve(dataset, request).download("ssp126_data_temperature.zip")
+client.retrieve(dataset, request).download("CDS_Data/ssp126_data_temperature.zip")
 
 
 # getting the SSP2-4.5 temperature data from the Copernicus Climate Data Store (CDS) and storing as a zip file
@@ -255,7 +257,7 @@ request = {
 }
 
 client = cdsapi.Client()
-client.retrieve(dataset, request).download("ssp245_data_temperature.zip")
+client.retrieve(dataset, request).download("CDS_Data/ssp245_data_temperature.zip")
 
 
 # getting the SSP5-8.5 temperature data from the Copernicus Climate Data Store (CDS) and storing as a zip file
@@ -305,13 +307,11 @@ request = {
 }
 
 client = cdsapi.Client()
-client.retrieve(dataset, request).download("ssp585_data_temperature.zip")
+client.retrieve(dataset, request).download("CDS_Data/ssp585_data_temperature.zip")
 
 
 # %%
 # getting historical soil moisture data from the Copernicus Climate Data Store (CDS) and storing as a zip file
-
-import cdsapi
 
 dataset = "projections-cmip6"
 request = {
@@ -348,7 +348,7 @@ request = {
 }
 
 client = cdsapi.Client()
-client.retrieve(dataset, request).download("historical_data_moisture.zip")
+client.retrieve(dataset, request).download("CDS_Data/historical_data_moisture.zip")
 
 
 
