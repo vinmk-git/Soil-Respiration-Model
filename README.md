@@ -24,9 +24,9 @@ The model is benchmarked against a Random Forest regressor, evaluated via strati
 ### Data
 - **SRDB** (v20250503): Annual soil respiration rates, mean annual temperature, biome classification, and site coordinates for global forest measurement sites
 - **CMIP6 / CDS**: Monthly near-surface air temperature (`tas`) and top-layer soil moisture (`mrsos`) under three SSP scenarios:
-  - SSP1-2.6 (low emissions)
-  - SSP2-4.5 (intermediate)
-  - SSP5-8.5 (high emissions)
+  - SSP1-2.6 (low emissions – equivalent to up to 1.8°C warming by 2100)
+  - SSP2-4.5 (intermediate – 3.5 °C)
+  - SSP5-8.5 (high emissions – 5.7 °C)
 - Historical CDS moisture data used to match SRDB sites to observed moisture conditions at the time of measurement
 
 ### Model
