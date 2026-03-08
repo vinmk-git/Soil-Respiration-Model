@@ -3,7 +3,7 @@
 In this project, I am modeling annual soil respiration rates based on soil moisture and surface temperature projections.
 The model predicts forest soil CO₂ release across tropical, subtropical, temperate, and boreal biomes until 2099 under three CMIP6 climate scenarios – SPP1-2.6, SPP2-4.5, and SPP5-8.5 – the same data underlying the IPCC policy reports.
 
-This model is built in Python on historical soil moisture data as well as data from the Soil Respiration Database (SRDB). 
+This model is built in Python using historical soil moisture data and data from the Soil Respiration Database (SRDB). [1-2] 
 
 This is the second project in a portfolio I'm building as part of my transition from nanotechnology into soil biogeochemistry. The first project is an [interactive CO₂ emissions dashboard](https://github.com/vinmk-git/CO2-Emissions-Dashboard) built in R Shiny.
 
@@ -12,8 +12,8 @@ This is the second project in a portfolio I'm building as part of my transition 
 ## What this project does
 
 Soil respiration is the release of CO₂ from soils via microbial decomposition and root activity, and it is one of the largest carbon fluxes in the terrestrial carbon cycle, and one of the bigger uncertainties in how ecosystems will respond to warming.
-This project, therefore, fits a Q10-based exponential respiration model to observational forest soil respiration data from the [Soil Respiration Database (SRDB)](https://github.com/bpbond/srdb). [1] The model can additionally also include historical soil moisture measurements using a quadratic model – a relationship that is well-documented in the literature. [2-4]
-I then project respiration rates forward to 2099 using temperature and soil moisture projection data from the [Copernicus Climate Data Store (CDS)](https://cds.climate.copernicus.eu/).
+This project, therefore, fits a Q10-based exponential respiration model to observational forest soil respiration data from the [Soil Respiration Database (SRDB)](https://github.com/bpbond/srdb). [3] The model can additionally also include historical soil moisture measurements using a quadratic model – a relationship that is well-documented in the literature. [4-6]
+I then project respiration rates to 2099 using temperature and soil moisture projections from the [Copernicus Climate Data Store (CDS)](https://cds.climate.copernicus.eu/). [7]
 
 The model is benchmarked against a Random Forest regressor, evaluated via stratified cross-validation, and visualized interactively on global maps using hvplot.
 
@@ -125,10 +125,16 @@ Currently transitioning into soil biogeochemistry and building toward a postdoc 
 ---
 
 ## References
-[1] Meyer, N., Welp, G. and Amelung, W., 2018. The temperature sensitivity (Q10) of soil respiration: controlling factors and spatial prediction at regional scale based on environmental soil classes. Global Biogeochemical Cycles, 32(2), pp.306-323.
+[1] Bond-Lamberty, B. and Thomson, A.M., 2010. A global database of soil respiration measurements. Biogeosciences, 7, pp.1321-1344.
 
-[2] Nie, C., Li, Y., Niu, L., Liu, Y., Shao, R., Xu, X. and Tian, Y., 2019. Soil respiration and its Q10 response to various grazing systems of a typical steppe in Inner Mongolia, China. PeerJ, 7, p.e7112.
+[2] Jian, J., Vargas, R., Anderson-Teixeira, K., Stell, E., Herrmann, V., Horn, M., Kholod, N., Manzon, J., Marchesi, R., Paredes, D. and Bond-Lamberty, B., 2021. A restructured and updated global soil respiration database (SRDB-V5). Earth System Science Data, 13(2), pp.255-267.
 
-[3] Yu, H., Xu, Z., Zhou, G. and Shi, Y., 2020. Soil carbon release responses to long-term versus short-term climatic warming in an arid ecosystem. Biogeosciences, 17(3), pp.781-792.
+[3] Meyer, N., Welp, G. and Amelung, W., 2018. The temperature sensitivity (Q10) of soil respiration: controlling factors and spatial prediction at regional scale based on environmental soil classes. Global Biogeochemical Cycles, 32(2), pp.306-323.
 
-[4] Cui, Y.B., Feng, J.G., Liao, L.G., Yu, R., Zhang, X., Liu, Y.H., Yang, L.Y., Zhao, J.F. and Tan, Z.H., 2020. Controls of temporal variations on soil respiration in a tropical lowland rainforest in Hainan Island, China. Tropical Conservation Science, 13, p.1940082920914902.
+[4] Nie, C., Li, Y., Niu, L., Liu, Y., Shao, R., Xu, X. and Tian, Y., 2019. Soil respiration and its Q10 response to various grazing systems of a typical steppe in Inner Mongolia, China. PeerJ, 7, p.e7112.
+
+[5] Yu, H., Xu, Z., Zhou, G. and Shi, Y., 2020. Soil carbon release responses to long-term versus short-term climatic warming in an arid ecosystem. Biogeosciences, 17(3), pp.781-792.
+
+[6] Cui, Y.B., Feng, J.G., Liao, L.G., Yu, R., Zhang, X., Liu, Y.H., Yang, L.Y., Zhao, J.F. and Tan, Z.H., 2020. Controls of temporal variations on soil respiration in a tropical lowland rainforest in Hainan Island, China. Tropical Conservation Science, 13, p.1940082920914902.
+
+[7] Copernicus Climate Change Service, Climate Data Store, (2021): CMIP6 climate projections. Copernicus Climate Change Service (C3S) Climate Data Store (CDS). DOI: 10.24381/cds.c866074c (Accessed on 21-02-2026)
