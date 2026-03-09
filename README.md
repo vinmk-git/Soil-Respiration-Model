@@ -56,6 +56,7 @@ SRDB site coordinates are matched to the nearest CMIP6 grid cell using a KDTree 
 ## Key findings
 
 *Full results pending completion of all SSP scenario runs.*
+Based on the forest data from the Forest Resources Assessment 2025, [8] the model then projects relative and absolute soil respiration levels by 2099.
 
 Preliminary results suggest soil respiration increases across all biomes under warming, with the strongest absolute increases in tropical forests and the strongest relative increases in boreal systems — consistent with the literature on Q10 latitudinal gradients.
 
@@ -137,4 +138,6 @@ Currently transitioning into soil biogeochemistry and building toward a postdoc 
 
 [6] Cui, Y.B., Feng, J.G., Liao, L.G., Yu, R., Zhang, X., Liu, Y.H., Yang, L.Y., Zhao, J.F. and Tan, Z.H., 2020. Controls of temporal variations on soil respiration in a tropical lowland rainforest in Hainan Island, China. Tropical Conservation Science, 13, p.1940082920914902.
 
-[7] Copernicus Climate Change Service, Climate Data Store, (2021): CMIP6 climate projections. Copernicus Climate Change Service (C3S) Climate Data Store (CDS). DOI: 10.24381/cds.c866074c (Accessed on 21-02-2026)
+[7] Copernicus Climate Change Service, Climate Data Store, (2021): CMIP6 climate projections. Copernicus Climate Change Service (C3S) Climate Data Store (CDS). DOI: 10.24381/cds.c866074c (Accessed on 21-02-2026).
+
+[8] FAO. 2025. Global Forest Resources Assessment 2025. Rome: FAO. https://doi.org/10.4060/cd6709en.
