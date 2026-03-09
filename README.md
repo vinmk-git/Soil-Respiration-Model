@@ -1,6 +1,6 @@
 # Forest Soil Respiration Model
 
-In this project, I am modeling annual soil respiration rates based on soil moisture and surface temperature projections.
+In this project, I am modeling annual soil respiration rates based on soil moisture and surface temperature.
 The model predicts forest soil CO₂ release across tropical, subtropical, temperate, and boreal biomes until 2099 under three CMIP6 climate scenarios – SPP1-2.6, SPP2-4.5, and SPP5-8.5 – the same data underlying the IPCC policy reports.
 
 This model is built in Python using historical soil moisture data and data from the Soil Respiration Database (SRDB). [1-2] 
